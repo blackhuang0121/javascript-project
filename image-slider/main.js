@@ -1,4 +1,5 @@
 // src/another.js
+(() => {
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const gallery = document.querySelector('.photo-gallery');
@@ -32,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateSlider(); // 初始化調用，設置滑動效果
 });
+})();
