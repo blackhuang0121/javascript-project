@@ -1,7 +1,9 @@
 // src/another.js
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
-    const slides = document.querySelector('.photo-gallery').children;
+    const gallery = document.querySelector('.photo-gallery');
+    if (!gallery) return;
+    const slides = gallery.children;
     const totalSlides = slides.length;
 
     // 更新滑動器，應用新的變換值
@@ -23,8 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider(); // 更新滑動
     }
 
-    document.querySelector('.slide-left').addEventListener('click', () => changeSlide(-1));
-    document.querySelector('.slide-right').addEventListener('click', () => changeSlide(1));
+    const leftBtn = document.querySelector('.slide-left');
+    const rightBtn = document.querySelector('.slide-right');
+    if (leftBtn) leftBtn.addEventListener('click', () => changeSlide(-1));
+    if (rightBtn) rightBtn.addEventListener('click', () => changeSlide(1));
 
     updateSlider(); // 初始化調用，設置滑動效果
 });

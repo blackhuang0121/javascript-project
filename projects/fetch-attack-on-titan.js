@@ -1,6 +1,5 @@
-// 1. 選擇哪個 div
-const cardContainer = document.getElementById("card-container");
 const character_count = 20;
+let cardContainer;
 
 // 2. 拉取 API
 const fetchCharacters = async () => {
@@ -53,4 +52,9 @@ const createCharacterCard = async (character, id) => {
     cardContainer.appendChild(characterEl);
 };
 
-fetchCharacters();
+document.addEventListener('DOMContentLoaded', () => {
+    cardContainer = document.getElementById('card-container');
+    if (cardContainer) {
+        fetchCharacters();
+    }
+});
