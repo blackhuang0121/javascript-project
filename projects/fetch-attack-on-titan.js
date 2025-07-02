@@ -1,3 +1,4 @@
+(() => {
 const character_count = 20;
 let cardContainer;
 
@@ -58,3 +59,4 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchCharacters();
     }
 });
+})();
