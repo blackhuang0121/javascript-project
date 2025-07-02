@@ -1,49 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>JS Projects 作品集</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>JS Projects 作品集</title>
 </head>
-
 <body>
-    <h1>我的 JavaScript 作品集</h1>
-
-    <div class="project-card">
-        <h2>1. API 拉取：巨人圖鑑</h2>
-        <p>使用 fetch API 從遠端取得巨人資料，動態顯示在網頁上。</p>
-        <div id="fetch-titan-app">
-            <div id="card-container"></div>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h2>2. 圖片滑動</h2>
-        <p>點擊左右按鈕切換顯示不同圖片，練習 DOM 操作和事件。</p>
-        <div id="image-slider-app">
-            <div class="slider-container">
-                <button class="slide-left">&#9664;</button>
-                <div class="photo-gallery">
-                    <img src="https://picsum.photos/id/237/600/400" alt="Sample 1" />
-                    <img src="https://picsum.photos/id/238/600/400" alt="Sample 2" />
-                    <img src="https://picsum.photos/id/239/600/400" alt="Sample 3" />
-                </div>
-                <button class="slide-right">&#9654;</button>
-            </div>
-        </div>
-    </div>
-    <div class="project-card">
-        <h2>3. API 拉取：怪奇物語</h2>
-        <p>使用 fetch API 從遠端取得角色資料，動態顯示在網頁上。</p>
-        <div id="fetch-stranger-things">
-            <div id="card-container-stranger"></div>
-        </div>
-    </div>
-
-    <script src="projects/fetch-attack-on-titan.js" defer></script>
-    <script src="projects/image-slider.js" defer></script>
-    <script src="projects/fetch-stranger-things.js" defer></script>
+  <h1>我的 JavaScript 作品集</h1>
+  <div class="project-list">
+    <a href="attack-on-titan/index.html" class="project-card">巨人圖鑑</a>
+    <a href="image-slider/index.html" class="project-card">圖片滑動</a>
+    <a href="stranger-things/index.html" class="project-card">怪奇物語</a>
+  </div>
 </body>
-
 </html>

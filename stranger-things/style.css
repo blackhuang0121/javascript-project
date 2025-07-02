@@ -23,55 +23,6 @@ h1 {
 .project-card h2 {
     margin-top: 0;
 }
-
-/* Attack on Titan cards */
-.character {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.character img {
-    width: 150px;
-    border-radius: 0.5rem;
-}
-
-/* Image slider */
-.slider-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.photo-gallery {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.photo-gallery img {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.slide-left,
-.slide-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-.slide-left {
-    left: 10px;
-}
-
-.slide-right {
-    right: 10px;
-}
-
 /* /怪奇物語 */
 .character-stranger {
     background-color: #e9edc9;
@@ -114,4 +65,3 @@ h1 {
     font-size: 0.9em;
     color: #777;
     margin: 5px 0;
-}
