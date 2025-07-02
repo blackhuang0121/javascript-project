@@ -1,4 +1,5 @@
 // ## 1. 選擇哪個 div
+(() => {
 const character_count = 20;
 let cardContainer;
 // const cardContainer = document.getElementById("card-container-stranger");
@@ -41,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchCharacters();
     }
 });
+})();
