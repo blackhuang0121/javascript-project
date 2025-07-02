@@ -1,3 +1,4 @@
+(() => {
 // src/another.js
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
@@ -32,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateSlider(); // 初始化調用，設置滑動效果
 });
+})();
