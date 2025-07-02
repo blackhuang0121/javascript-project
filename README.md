@@ -1,1 +1,2 @@
-- Javascript 的各種專案
+- Javascript 的各種小專案
+- link: https://blackhuang0121.github.io/javascript-project/
