@@ -3,7 +3,7 @@ const imageContainerEl = document.querySelector(".image-container");
 const btnEl = document.querySelector(".btn");
 
 btnEl.addEventListener("click", () => {
-    addNewImages(6);
+    addNewImages(8);
 });
 
 function addNewImages() {
