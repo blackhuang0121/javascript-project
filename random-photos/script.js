@@ -30,7 +30,23 @@ const imageList = [
     "img/DSCF4391.JPG",
     "img/DSCF4461.JPG",
     "img/DSCF4481.JPG",
-    // ...把你所有照片檔名都寫進來
+    "img/DSCF4563.JPG",
+    "img/DSCF4572.JPG",
+    "img/DSCF4621.JPG",
+    "img/DSCF4639.JPG",
+    "img/DSCF4701.JPG",
+    "img/DSCF4782.JPG",
+    "img/DSCF4889.JPG",
+    "img/DSCF4921.JPG",
+    "img/DSCF5052.JPG",
+    "img/DSCF5160.JPG",
+    "img/DSCF5329.JPG",
+    "img/DSCF5332.JPG",
+    "img/DSCF5333.JPG",
+    "img/DSCF5346.JPG",
+    "img/DSCF5365.JPG",
+    "img/DSCF5558.JPG",
+    "img/DSCF5845.JPG",
 ];
 
 shuffle(imageList);
