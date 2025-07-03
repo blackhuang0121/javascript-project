@@ -5,11 +5,34 @@ function shuffle(arr) {
     }
 }
 
-// 準備所有圖片路徑
-const imageList = [];
-for (let i = 1; i <= 35; i++) {   // 這裡假設你有 20 張照片
-    imageList.push(`img/DSCF${i}.JPG`);
-}
+// // 準備所有圖片路徑
+// const imageList = [];
+// for (let i = 1; i <= 35; i++) {   // 這裡假設你有 20 張照片
+//     imageList.push(`img/DSCF${i}.JPG`);
+// }
+
+const imageList = [
+    "img/DSCF2002.JPG",
+    "img/DSCF2117.JPG",
+    "img/DSCF2122.JPG",
+    "img/DSCF2125.JPG",
+    "img/DSCF2161.JPG",
+    "img/DSCF2274.JPG",
+    "img/DSCF2728.JPG",
+    "img/DSCF2794.JPG",
+    "img/DSCF2831.JPG",
+    "img/DSCF2847.JPG",
+    "img/DSCF3196.JPG",
+    "img/DSCF3211.JPG",
+    "img/DSCF3499.JPG",
+    "img/DSCF4252.JPG",
+    "img/DSCF4346.JPG",
+    "img/DSCF4391.JPG",
+    "img/DSCF4461.JPG",
+    "img/DSCF4481.JPG",
+    // ...把你所有照片檔名都寫進來
+];
+
 shuffle(imageList);
 
 const imageContainerEl = document.querySelector('.image-container');
