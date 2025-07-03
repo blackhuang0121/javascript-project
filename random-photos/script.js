@@ -8,7 +8,7 @@ function shuffle(arr) {
 // 準備所有圖片路徑
 const imageList = [];
 for (let i = 1; i <= 35; i++) {   // 這裡假設你有 20 張照片
-    imageList.push(`img/photo${i}.jpg`);
+    imageList.push(`img/DSCF${i}.JPG`);
 }
 shuffle(imageList);
 
