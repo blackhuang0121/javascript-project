@@ -11,7 +11,7 @@ body {
 }
 
 .image-container img {
-    width: 360px;
+    width: 320px;
     height: auto;
     object-fit: contain;
     margin: 10px;
