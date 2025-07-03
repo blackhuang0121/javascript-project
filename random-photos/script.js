@@ -41,7 +41,6 @@ const imageList = [
     "img/DSCF5052.JPG",
     "img/DSCF5160.JPG",
     "img/DSCF5329.JPG",
-    "img/DSCF5332.JPG",
     "img/DSCF5333.JPG",
     "img/DSCF5346.JPG",
     "img/DSCF5365.JPG",
