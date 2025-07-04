@@ -69,6 +69,12 @@ h2 {
     padding: 1rem 1.5rem;
 }
 
+.menu a:hover {
+    background: #023047;
+    padding-left: 1.7rem;
+    color: #fff;
+}
+
 @media (min-width: 676px) {
     .sidebar {
         width: 500px;
