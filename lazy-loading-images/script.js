@@ -1,0 +1,52 @@
+let currentIndex = 0;
+const imagesPerLoad = 8;
+const imageList = [
+    "img/DSCF2002.JPG",
+    "img/DSCF2117.JPG",
+    "img/DSCF2122.JPG",
+    "img/DSCF2125.JPG",
+    "img/DSCF2161.JPG",
+    "img/DSCF2274.JPG",
+    "img/DSCF2728.JPG",
+    "img/DSCF2794.JPG",
+    "img/DSCF2831.JPG",
+    "img/DSCF2847.JPG",
+    "img/DSCF3196.JPG",
+    "img/DSCF3211.JPG",
+    "img/DSCF3499.JPG",
+    "img/DSCF4252.JPG",
+    "img/DSCF4346.JPG",
+    "img/DSCF4391.JPG",
+    "img/DSCF4461.JPG",
+    "img/DSCF4481.JPG",
+    "img/DSCF4563.JPG",
+    "img/DSCF4572.JPG",
+    "img/DSCF4621.JPG",
+    "img/DSCF4639.JPG",
+    "img/DSCF4701.JPG",
+    "img/DSCF4782.JPG",
+    "img/DSCF4889.JPG",
+    "img/DSCF4921.JPG",
+    "img/DSCF5052.JPG",
+    "img/DSCF5160.JPG",
+    "img/DSCF5329.JPG",
+    "img/DSCF5333.JPG",
+    "img/DSCF5346.JPG",
+    "img/DSCF5365.JPG",
+    "img/DSCF5558.JPG",
+    "img/DSCF5845.JPG",
+];
+
+function addNewImages() {
+    // 跟之前一樣，一次 append N 張
+}
+
+// 初次載入
+addNewImages();
+
+// 偵測滑到頁底就再加
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+        addNewImages();
+    }
+});

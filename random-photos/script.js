@@ -5,12 +5,6 @@ function shuffle(arr) {
     }
 }
 
-// // 準備所有圖片路徑
-// const imageList = [];
-// for (let i = 1; i <= 35; i++) {   // 這裡假設你有 20 張照片
-//     imageList.push(`img/DSCF${i}.JPG`);
-// }
-
 const imageList = [
     "img/DSCF2002.JPG",
     "img/DSCF2117.JPG",
@@ -47,6 +41,12 @@ const imageList = [
     "img/DSCF5558.JPG",
     "img/DSCF5845.JPG",
 ];
+
+
+// for (let i = 1; i <= 35; i++) {   // 這裡假設你有 20 張照片
+//     imageList.push(`img/DSCF${i}.JPG`);
+// }
+
 
 shuffle(imageList);
 
