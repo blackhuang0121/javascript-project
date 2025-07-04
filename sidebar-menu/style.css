@@ -64,6 +64,14 @@ h2 {
     transform: translate(0);
 }
 
+.siderbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+
 @media (min-width: 676px) {
     .sidebar {
         width: 500px;
@@ -71,6 +79,7 @@ h2 {
 }
 
 .menu a:hover {
-    background: #f8a5a5;
+    background: #023047;
     padding-left: 1.7rem;
+    color: #fff;
 }
