@@ -49,8 +49,14 @@ function addNewImages() {
     currentIndex = nextIndex;
 }
 
-// 初次載入
+function autoFillToScrollable() {
+    while (document.body.offsetHeight <= window.innerHeight && currentIndex < imageList.length) {
+        addNewImages();
+    }
+}
+
 addNewImages();
+autoFillToScrollable();
 
 // 偵測滑到頁底就再加
 window.addEventListener('scroll', () => {
