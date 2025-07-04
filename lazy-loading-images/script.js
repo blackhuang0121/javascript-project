@@ -52,11 +52,27 @@ function addNewImages() {
 function autoFillToScrollable() {
     while (document.body.offsetHeight <= window.innerHeight && currentIndex < imageList.length) {
         addNewImages();
+        setTimeout(autoFillToScrollable, 80);  // 遞迴執行，直到真的超過高度
     }
 }
 
-addNewImages();
-autoFillToScrollable();
+// ⬇️ 這裡每次初始化都會清空舊內容，歸零
+function initializeImages() {
+    imageContainerEl.innerHTML = ""; // 清掉全部舊圖片
+    currentIndex = 0;                // 歸零
+    addNewImages();
+    autoFillToScrollable();
+}
+
+function initializeImages() {
+    imageContainerEl.innerHTML = "";
+    currentIndex = 0;
+    addNewImages();
+    autoFillToScrollable();
+}
+
+initializeImages(); // 初次載入呼叫一次
+
 
 // 偵測滑到頁底就再加
 window.addEventListener('scroll', () => {
