@@ -1,3 +1,4 @@
+const imageContainerEl = document.querySelector('.image-container');
 let currentIndex = 0;
 const imagesPerLoad = 8;
 const imageList = [
@@ -38,7 +39,14 @@ const imageList = [
 ];
 
 function addNewImages() {
-    // 跟之前一樣，一次 append N 張
+    const nextIndex = Math.min(currentIndex + imagesPerLoad, imageList.length);
+    console.log('addNewImages:', currentIndex, '->', nextIndex, 'total:', imageList.length);
+    for (let i = currentIndex; i < nextIndex; i++) {
+        const newImgEl = document.createElement('img');
+        newImgEl.src = imageList[i];
+        imageContainerEl.appendChild(newImgEl);
+    }
+    currentIndex = nextIndex;
 }
 
 // 初次載入
@@ -46,7 +54,9 @@ addNewImages();
 
 // 偵測滑到頁底就再加
 window.addEventListener('scroll', () => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
+        && currentIndex < imageList.length
+    ) {
         addNewImages();
     }
 });
