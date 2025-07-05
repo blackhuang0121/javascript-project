@@ -44,7 +44,7 @@ h1 {
     color: #fff;
 }
 
-body.dark .nav-menu {
+body.dark .nav-menu a {
     color: #fff;
 }
 
